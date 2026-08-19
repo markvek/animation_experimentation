@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: #0b0d12;
+  color: #e6e8ee;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Fullscreen sketch host */
+#sketch {
+  position: fixed;
+  inset: 0;
+}
+
+#sketch canvas {
+  display: block;
+}
+
+/* Back link overlaid on sketch pages */
+.back-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  color: #9aa3b2;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #2a2f3a;
+  border-radius: 6px;
+  background: rgba(11, 13, 18, 0.7);
+}
+
+.back-link:hover {
+  color: #e6e8ee;
+  border-color: #4a5160;
+}
+
+/* Controls hint overlaid on sketch pages */
+.hint {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 10;
+  color: #9aa3b2;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #2a2f3a;
+  border-radius: 6px;
+  background: rgba(11, 13, 18, 0.7);
+  pointer-events: none;
+}
+
+/* Gallery page */
+.gallery {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.gallery h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery p.subtitle {
+  color: #9aa3b2;
+  margin-bottom: 2.5rem;
+}
+
+.gallery ul {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.gallery a.card {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #2a2f3a;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.gallery a.card:hover {
+  border-color: #6ea8fe;
+  transform: translateY(-2px);
+}
+
+.gallery a.card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.gallery a.card span {
+  color: #9aa3b2;
+  font-size: 0.9rem;
+}
